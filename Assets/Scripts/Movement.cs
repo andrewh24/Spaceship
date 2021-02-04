@@ -7,10 +7,12 @@ public class Movement : MonoBehaviour
     public float thrustSpeed = 1000;
     public float rotateSpeed = 50;
     Rigidbody rb;
+    AudioSource audioSource;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -24,17 +26,25 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             rb.AddRelativeForce(Vector3.up * thrustSpeed * Time.deltaTime);
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            audioSource.Stop();
         }
     }
 
     void ProcessRotation()
     {
-        if (Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.D))
         {
             ApplyRotation(rotateSpeed);
         }
 
-        if (Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.A))
         {
             ApplyRotation(-rotateSpeed);
         }

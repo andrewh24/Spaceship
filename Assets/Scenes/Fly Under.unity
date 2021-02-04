@@ -293,7 +293,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.13052596, y: -0, z: -0, w: 0.99144495}
-  m_LocalPosition: {x: 0, y: 15.240001, z: -59.2}
+  m_LocalPosition: {x: 0, y: 20.6, z: -44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -424,6 +424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Launch pad
       objectReference: {fileID: 0}
+    - target: {fileID: 2468686512442972421, guid: 3558258c66a8a96498fa27347aba6e23, type: 3}
+      propertyPath: m_TagString
+      value: Friendly
+      objectReference: {fileID: 0}
     - target: {fileID: 2468686512442972425, guid: 3558258c66a8a96498fa27347aba6e23, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -482,12 +486,20 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2354026819135225482, guid: 741d7c64b42902343a3b78bcee4e98cf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 124.607475
+      objectReference: {fileID: 0}
+    - target: {fileID: 2354026819135225482, guid: 741d7c64b42902343a3b78bcee4e98cf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5.220294
+      objectReference: {fileID: 0}
+    - target: {fileID: 2354026819135225482, guid: 741d7c64b42902343a3b78bcee4e98cf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2354026819135225482, guid: 741d7c64b42902343a3b78bcee4e98cf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 17.7
       objectReference: {fileID: 0}
     - target: {fileID: 2354026819135225482, guid: 741d7c64b42902343a3b78bcee4e98cf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -521,6 +533,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2390049389529328512, guid: 741d7c64b42902343a3b78bcee4e98cf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3e7d57f84b443ae4794750322cec6d1f, type: 2}
     - target: {fileID: 3119791599201675711, guid: 741d7c64b42902343a3b78bcee4e98cf, type: 3}
       propertyPath: m_Name
       value: Obstacle
@@ -537,6 +553,10 @@ PrefabInstance:
     - target: {fileID: 6355334294471181222, guid: 0b377d04f88da7e478aaa20a69a45174, type: 3}
       propertyPath: m_Name
       value: Land pad
+      objectReference: {fileID: 0}
+    - target: {fileID: 6355334294471181222, guid: 0b377d04f88da7e478aaa20a69a45174, type: 3}
+      propertyPath: m_TagString
+      value: Finish
       objectReference: {fileID: 0}
     - target: {fileID: 6355334294471181226, guid: 0b377d04f88da7e478aaa20a69a45174, type: 3}
       propertyPath: m_RootOrder
